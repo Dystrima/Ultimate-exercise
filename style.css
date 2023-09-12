@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@300;400;500;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background: linear-gradient(260deg, #181942 0%, #303030 100%);
+  color: #FFF;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: normal;
+}
+.logo span {
+  color: #E6606C;
+}
+
+header {
+  margin: 31px auto 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  gap: 33px;
+}
+header nav ul li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+main .hero {
+  margin-top: 164px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+main .hero h1 {
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+main .hero h2 {
+  color: #E8AB36;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+main .hero p {
+  color: #EFEFEF;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.72px;
+}
+main .mid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 145px;
+}
+main .bot .text {
+  text-align: center;
+}
+main .bot .container {
+  display: flex;
+  gap: 30px;
+}
+main .bot .container .card {
+  background: radial-gradient(circle, #4D4F95 0%, #2B2D66 100%);
+  border-radius: 12px;
+}
+main .bot .container .card .text {
+  padding: 38px 32px;
+  text-align: left;
+}
+main .bot .container .card .text .content {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #FFF;
+}
+main .bot .container .card .text .date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 20px;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 996px;
+}
+footer li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+footer .top-footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .top-footer .menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .top-footer .menu-footer p {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+footer .top-footer .mini-logos {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+footer .top-footer .mini-logos .logo1 {
+  background-color: #6357F6;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+footer .top-footer .mini-logos .logo1 img {
+  max-width: 18px;
+  max-height: 18px;
+}
+footer .line {
+  background-color: #FFF;
+  height: 1px;
+  opacity: 0.0797;
+}
+footer .bottom-footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom-footer ul {
+  display: flex;
+  gap: 48px;
+}
+
+.start {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.63px;
+  text-transform: uppercase;
+  padding: 13px 30px;
+  border-radius: 75px;
+  background-color: #E6606C;
+}
+
+.more {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.63px;
+  text-transform: uppercase;
+  margin-left: 24px;
+  padding: 13px 30px;
+  border-radius: 75px;
+  background-color: #FFF;
+  color: #000;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 64px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}

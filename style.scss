@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@300;400;500;800&display=swap');
+@import 'config';
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: normal;
+
+    span {
+        color: $second-color;
+    }
+}
+
+header {
+    margin: 31px auto 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        ul {
+            display: flex;
+            gap: 33px;
+            li {
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .hero {
+        margin-top: 164px;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+
+        h1 {
+            font-size: 64px;
+            font-weight: 300;
+            letter-spacing: 2.88px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: $highlight-color;
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 1.44px;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #EFEFEF;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0.72px;
+        }
+    }
+
+    .mid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        gap: 145px;
+    }
+
+    .bot {
+        .text {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+
+            .card {
+                background: $bg-card;
+                border-radius: 12px;
+                // border: 2px solid rgba(255, 255, 255, 0.08);
+
+                .text {
+                    padding: 38px 32px;
+                    text-align: left;
+
+                    .content {
+                        font-family: $second-font;
+                        font-size: 24px;
+                        font-weight: 300;
+                        line-height: 32px;
+                        color: $main-color;
+                    }
+
+                    .date {
+                        color: rgba(255, 255, 255, 0.5);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 996px;
+
+    li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+    .top-footer {
+        display: flex;
+        justify-content: space-between;
+
+        .menu-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            p {
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
+
+        .mini-logos {
+            display: flex;
+            gap: 8px;
+            justify-content: space-between;
+
+            .logo1 {
+                background-color: $icon-color;
+                border-radius: 50%;
+                height: 48px;
+                width: 48px;
+
+                img {
+                    max-width: 18px;
+                    max-height: 18px;
+                }
+            }
+        }
+    }
+
+    .line {
+        background-color: $main-color;
+        height: 1px;
+        opacity: 0.0797;
+    }
+
+    .bottom-footer {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            gap: 48px;
+        }
+    }
+}
+
+@import 'button';
+@import 'titles';

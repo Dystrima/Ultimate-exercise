@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$main-color: #FFF;
+$second-color: #E6606C;
+$highlight-color: #E8AB36;
+$icon-color: #6357F6;
+$gradient-light: #4D4F95;
+$gradient-dark: #2B2D66;
+$radial-light: #181942;
+$radial-dark: #303030;
+
+$bg-card: radial-gradient(circle, $gradient-light 0%, $gradient-dark 100%);
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: linear-gradient(260deg, $radial-light 0%, $radial-dark 100%);
+    color: $main-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $main-color;
+}
+
+img {
+    width: 100%;
+}
+
+$second-font: 'Barlow Condensed', sans-serif;
