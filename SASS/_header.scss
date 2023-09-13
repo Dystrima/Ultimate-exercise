@@ -1,0 +1,27 @@
+header {
+    margin: 31px auto 164px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        z-index: 2;
+        ul {
+            display: flex;
+            gap: 33px;
+            li {
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .bg-tr {
+        width: 730px;
+        position: absolute;
+        top: -112px;
+        right: -129px;
+    }
+}
