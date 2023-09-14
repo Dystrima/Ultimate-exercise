@@ -67,6 +67,9 @@ header nav ul li {
   font-size: 14px;
   font-weight: 400;
 }
+header nav ul li a:hover {
+  color: #E8AB36;
+}
 header .bg-tr {
   display: none;
   z-index: -2;
@@ -110,6 +113,16 @@ header .bg-tr {
   color: #000;
 }
 
+/* BUTTONS HOVER */
+.start:hover {
+  background-color: #E8AB36;
+  color: #000;
+}
+
+.more:hover {
+  color: #E6606C;
+}
+
 h3 {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
@@ -151,6 +164,11 @@ main {
   main {
     padding: 0;
   }
+}
+main .pets {
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  box-shadow: 0px 24px 24px 0px rgba(0, 1, 44, 0.16);
 }
 @media (min-width: 768px) {
   main h1::before {
@@ -301,6 +319,9 @@ footer li {
   font-weight: 400;
   line-height: 32px;
 }
+footer li a:hover {
+  color: #E8AB36;
+}
 footer .top-footer {
   display: none;
 }
@@ -361,4 +382,16 @@ footer .bottom-footer {
 footer .bottom-footer ul {
   display: flex;
   gap: 48px;
+}
+
+.gif {
+  margin-top: 30px;
+  max-width: 1000px;
+}
+
+.animal {
+  position: absolute;
+  max-width: 1100px;
+  bottom: 0;
+  right: 0;
 }

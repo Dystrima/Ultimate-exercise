@@ -21,5 +21,15 @@
     padding: 13px 30px;
     border-radius: 75px;
     background-color: $main-color;
-    color: #000;
+    color: $black;
+}
+
+/* BUTTONS HOVER */
+.start:hover {
+    background-color: $highlight-color;
+    color: $black;
+}
+
+.more:hover {
+    color: $second-color;
 }

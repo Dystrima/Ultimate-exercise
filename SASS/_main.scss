@@ -8,6 +8,12 @@ main {
         padding: 0;
     }
 
+    .pets {
+        border: 2px solid $black-08;
+        border-radius: 1rem;
+        box-shadow: 0px 24px 24px 0px $shadow-blue;
+    }
+
     @media (min-width: $breakpoint-tablet) {
         h1::before {
             content: url(deco3.png);
