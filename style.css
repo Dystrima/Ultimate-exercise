@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@300;400;500;800&display=swap");
+/* COLORS */
+/* FONTS */
+/* BREAKPOINTS */
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,9 +43,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+}
+@media (min-width: 1440px) {
+  header {
+    padding: 0;
+  }
 }
 header nav {
-  z-index: 2;
+  display: none;
+}
+@media (min-width: 768px) {
+  header nav {
+    display: initial;
+  }
 }
 header nav ul {
   display: flex;
@@ -53,10 +68,20 @@ header nav ul li {
   font-weight: 400;
 }
 header .bg-tr {
-  width: 730px;
+  display: none;
+  z-index: -2;
   position: absolute;
-  top: -112px;
-  right: -129px;
+  width: 601px;
+  height: 635px;
+  top: 0;
+  right: 0;
+  background-image: url(deco1.png);
+  background-position: bottom left;
+}
+@media (min-width: 1024px) {
+  header .bg-tr {
+    display: initial;
+  }
 }
 
 .buttons {
@@ -120,20 +145,28 @@ p {
 main {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 20px;
 }
-main h1::before {
-  content: url(deco3.png);
-  position: absolute;
-  top: -48px;
-  left: -43px;
-  z-index: -2;
+@media (min-width: 1440px) {
+  main {
+    padding: 0;
+  }
 }
-main .hero::after {
-  content: url(deco2.png);
-  position: absolute;
-  bottom: -84px;
-  left: 281px;
-  z-index: -2;
+@media (min-width: 768px) {
+  main h1::before {
+    content: url(deco3.png);
+    position: absolute;
+    top: -48px;
+    left: -43px;
+    z-index: -2;
+  }
+  main .hero::after {
+    content: url(deco2.png);
+    position: absolute;
+    bottom: -84px;
+    left: 281px;
+    z-index: -2;
+  }
 }
 main .hero {
   display: flex;
@@ -165,22 +198,38 @@ main .hero p {
 }
 main .mid {
   display: grid;
-  grid-template-columns: 1fr 470px;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: space-between;
-  gap: 145px;
-  margin-bottom: 75px;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+@media (min-width: 768px) {
+  main .mid {
+    margin-bottom: 75px;
+  }
+}
+@media (min-width: 1024px) {
+  main .mid {
+    grid-template-columns: 1fr 470px;
+    gap: 145px;
+  }
+}
+main .mid .text {
+  max-width: 470px;
 }
 main .mid h4 {
   width: 321px;
   position: relative;
 }
-main .mid h4::after {
-  content: url("Ellipse 1.png");
-  position: absolute;
-  top: 20px;
-  right: -121px;
-  z-index: -2;
+@media (min-width: 768px) {
+  main .mid h4::after {
+    content: url("Ellipse 1.png");
+    position: absolute;
+    top: 20px;
+    right: -121px;
+    z-index: -2;
+  }
 }
 main .mid p {
   margin-bottom: 30px;
@@ -191,17 +240,26 @@ main .bot .text {
   max-width: 570px;
   margin: 0 auto 70px;
 }
-main .bot .text::before {
-  content: url("deco3 2.png");
-  position: absolute;
-  top: -15px;
-  left: 5px;
-  z-index: -2;
+@media (min-width: 768px) {
+  main .bot .text::before {
+    content: url("deco3 2.png");
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    z-index: -2;
+  }
 }
 main .bot .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 113px;
+}
+@media (min-width: 1440px) {
+  main .bot .container {
+    flex-wrap: nowrap;
+  }
 }
 main .bot .container .card {
   background: radial-gradient(circle, #4D4F95 0%, #2B2D66 100%);
@@ -231,6 +289,12 @@ main .bot .container .card .text1 .date {
 footer {
   margin: 0 auto;
   max-width: 996px;
+  padding: 20px;
+}
+@media (min-width: 1440px) {
+  footer {
+    padding: 0;
+  }
 }
 footer li {
   font-size: 16px;
@@ -238,9 +302,15 @@ footer li {
   line-height: 32px;
 }
 footer .top-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  display: none;
+}
+@media (min-width: 768px) {
+  footer .top-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 30px;
+  }
 }
 footer .top-footer .menu-footer {
   display: flex;
@@ -286,6 +356,7 @@ footer .bottom-footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 75px;
+  flex-wrap: wrap;
 }
 footer .bottom-footer ul {
   display: flex;

@@ -4,9 +4,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    @media (min-width: $breakpoint-desktop) {
+        padding: 0;
+    }
+
 
     nav {
-        z-index: 2;
+        display: none;
+        @media (min-width: $breakpoint-tablet) {
+            display: initial;
+        }
         ul {
             display: flex;
             gap: 33px;
@@ -19,9 +27,18 @@ header {
     }
 
     .bg-tr {
-        width: 730px;
+        display: none;
+        z-index: -2;
         position: absolute;
-        top: -112px;
-        right: -129px;
+        width: 601px;
+        height: 635px;
+        top: 0;
+        right: 0;
+        background-image: url(deco1.png);
+        background-position: bottom left;
+        @media (min-width: $breakpoint-smallscreen) {
+            display: initial;
+        }
     }
+
 }
