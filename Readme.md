@@ -1,4 +1,4 @@
-# Media Queries
+# Ultimate Exercise
 
 A CSS exercise done during my training at [BeCode](https://becode.org/all-trainings/pedagogical-framework-junior-developer/).
 
