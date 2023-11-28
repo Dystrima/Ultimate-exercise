@@ -1,6 +1,6 @@
 nav {
     position: fixed;
-    right: -50vh;
+    right: -100vh;
     transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
     @media (min-width: $breakpoint-tablet) {
         display: initial;

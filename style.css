@@ -39,7 +39,7 @@ img {
 
 nav {
   position: fixed;
-  right: -50vh;
+  right: -100vh;
   transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 @media (min-width: 768px) {
@@ -101,7 +101,13 @@ header {
 }
 header nav ul {
   display: flex;
-  gap: 33px;
+  justify-content: center;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  header nav ul {
+    gap: 33px;
+  }
 }
 header nav ul li {
   display: inline-block;
@@ -119,7 +125,7 @@ header .bg-tr {
   height: 635px;
   top: 0;
   right: 0;
-  background-image: url(deco1.png);
+  background-image: url(Assets/deco1.png);
   background-position: bottom left;
 }
 @media (min-width: 1024px) {
@@ -213,14 +219,14 @@ main .pets {
 }
 @media (min-width: 768px) {
   main h1::before {
-    content: url(deco3.png);
+    content: url(Assets/deco3.png);
     position: absolute;
     top: -48px;
     left: -43px;
     z-index: -2;
   }
   main .hero::after {
-    content: url(deco2.png);
+    content: url(Assets/deco2.png);
     position: absolute;
     bottom: -84px;
     left: 281px;
@@ -283,7 +289,7 @@ main .mid h4 {
 }
 @media (min-width: 768px) {
   main .mid h4::after {
-    content: url("Ellipse 1.png");
+    content: url("Assets/Ellipse 1.png");
     position: absolute;
     top: 20px;
     right: -121px;
@@ -301,7 +307,7 @@ main .bot .text {
 }
 @media (min-width: 768px) {
   main .bot .text::before {
-    content: url("deco3 2.png");
+    content: url("Assets/deco3 2.png");
     position: absolute;
     top: -15px;
     left: 5px;
@@ -426,13 +432,17 @@ footer .bottom-footer ul {
 }
 
 .gif {
-  margin-top: 30px;
+  margin: 30px auto 150px;
   max-width: 1000px;
 }
 
-.animal {
-  position: absolute;
-  max-width: 1100px;
-  bottom: 0;
-  right: 0;
+.bot {
+  margin-bottom: 150px;
 }
+
+/* .animal {
+    position: absolute;
+    max-width: 1100px;
+    bottom: 0;
+    right: 0;
+} */

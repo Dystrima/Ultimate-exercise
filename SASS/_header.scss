@@ -13,7 +13,11 @@ header {
     nav {
         ul {
             display: flex;
-            gap: 33px;
+            justify-content: center;
+            gap: 16px;
+            @media (min-width: $breakpoint-tablet) {
+                gap: 33px;
+            }
             li {
                 display: inline-block;
                 font-size: 14px;
@@ -33,7 +37,7 @@ header {
         height: 635px;
         top: 0;
         right: 0;
-        background-image: url(deco1.png);
+        background-image: url(Assets/deco1.png);
         background-position: bottom left;
         @media (min-width: $breakpoint-smallscreen) {
             display: initial;

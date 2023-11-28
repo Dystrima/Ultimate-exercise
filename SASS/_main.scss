@@ -16,14 +16,14 @@ main {
 
     @media (min-width: $breakpoint-tablet) {
         h1::before {
-            content: url(deco3.png);
+            content: url(Assets/deco3.png);
             position: absolute;
             top: -48px;
             left: -43px;
             z-index: -2;
         }
         .hero::after {
-            content: url(deco2.png);
+            content: url(Assets/deco2.png);
             position: absolute;
             bottom: -84px;
             left: 281px;
@@ -89,7 +89,7 @@ main {
 
         @media (min-width: $breakpoint-tablet) {
             h4::after {
-                content: url('Ellipse 1.png');
+                content: url('Assets/Ellipse 1.png');
                 position: absolute;
                 top: 20px;
                 right: -121px;
@@ -112,7 +112,7 @@ main {
         
         @media (min-width: $breakpoint-tablet) {
             .text::before {
-                content: url('deco3 2.png');
+                content: url('Assets/deco3 2.png');
                 position: absolute;
                 top: -15px;
                 left: 5px;
